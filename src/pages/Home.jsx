@@ -11,6 +11,7 @@ import ip17e from "../assets/ip17e.png";
 import ip16 from "../assets/ip16.png";
 import bandingkan from "../assets/bandingkan.png";
 import ios from "../assets/ios.png";
+import iklan from "../assets/iklan.mp4";
 
 export default function Home() {
   useEffect(() => {
@@ -56,7 +57,7 @@ export default function Home() {
       <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
 
       <section className="h-200 bg-gray-100 p-10">
-        <h1 className="p-10 text-center font-[Luxurious_Script] text-7xl font-light tracking-[0.08em]">
+        <h1 className="px-10 pb-7 text-center font-[Luxurious_Script] text-7xl font-light tracking-[0.08em]">
           Find Your iPhone
         </h1>
 
@@ -65,6 +66,18 @@ export default function Home() {
         </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
+
+      <section className="h-200 bg-white">
+        <video
+          className=" w-fullh-full object-cover"
+          src={iklan}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </section>
+      <div className="h-16 bg-gradient-to-b from-white to-gray-100" />
     </main>
   );
 }

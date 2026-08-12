@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white px-20 py-10">
+    <footer className="bg-gray-100 px-20 py-10">
       <div className="flex justify-between">
         <div>
           <h2 className="font-semibold">iPhone</h2>

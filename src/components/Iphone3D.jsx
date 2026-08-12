@@ -11,7 +11,12 @@ function Iphone() {
   });
 
   return (
-    <primitive ref={modelRef} object={scene} scale={0.8} position={[0, 0, 0]} />
+    <primitive
+      ref={modelRef}
+      object={scene}
+      scale={0.7}
+      position={[0, 0.3, 0]}
+    />
   );
 }
 
