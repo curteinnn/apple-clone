@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 
 import ProductCard from "../components/ProductCard";
+import Iphone3D from "../components/Iphone3D";
 
 import ip17pro from "../assets/ip17pro.png";
 import ipair from "../assets/ipair.png";
@@ -58,6 +59,10 @@ export default function Home() {
         <h1 className="p-10 text-center font-[Luxurious_Script] text-7xl font-light tracking-[0.08em]">
           Find Your iPhone
         </h1>
+
+        <div className="h-screen">
+          <Iphone3D />
+        </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
     </main>
