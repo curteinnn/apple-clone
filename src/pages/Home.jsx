@@ -56,13 +56,15 @@ export default function Home() {
 
       <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
 
-      <section className="h-200 bg-gray-100 p-10">
-        <h1 className="px-10 pb-7 text-center font-[Luxurious_Script] text-7xl font-light tracking-[0.08em]">
+      <section className="h-200 bg-gray-100">
+        <h1 className="mx-auto w-fit text-center font-[Luxurious_Script] text-7xl font-light tracking-[0.08em]">
           Find Your iPhone
         </h1>
 
-        <div className="h-screen">
-          <Iphone3D />
+        <div className="relative flex h-screen items-center justify-center">
+          <div className="absolute inset-0 z-10">
+            <Iphone3D />
+          </div>
         </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
