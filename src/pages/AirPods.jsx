@@ -33,17 +33,35 @@ export default function iPhone() {
   return (
     <main className="animate-home">
       <section className="h-100 bg-white">
-        <h1 className="iphone-title text-center pl-25 pt-10 font-[Luxurious_Script] text-9xl font-light">
-          APPLE
-        </h1>
+        <h1 className="iphone-title pl-25 pt-10 text-8xl ">AirPods</h1>
+
+        <div className="flex gap-20 pl-20 pt-10">
+          <ProductCard image={ip17pro} name="iPhone 17 Pro" />
+
+          <ProductCard image={ipair} name="iPhone Air" />
+
+          <ProductCard image={ip17} name="iPhone 17" />
+
+          <ProductCard image={ip17e} name="iPhone 17e" />
+
+          <ProductCard image={ip16} name="iPhone 16" />
+
+          <ProductCard image={bandingkan} name="Bandingkan" />
+
+          <ProductCard image={ios} name="iOS pratinjau" />
+        </div>
       </section>
 
-      <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
+      <div className="h-20 bg-linear-to-b from-white to-gray-100" />
 
-      <section className="h-200 bg-gray-100">
-        <h1 className="mx-auto w-fit text-center font-[Luxurious_Script] text-9xl font-light tracking-[0.08em]">
-          ANJAYYYYYY
+      <section className="relative h-200 bg-gray-100">
+        <h1 className="absolute inset-0 z-0 flex items-center justify-center text-7xl tracking-[0.08em]">
+          Find Your iPhone
         </h1>
+
+        <div className="relative z-10 flex h-full items-center justify-center">
+          <Iphone3D />
+        </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
 

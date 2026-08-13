@@ -3,9 +3,9 @@ export default function Footer() {
     <footer className="bg-gray-100 px-20 py-10">
       <div className="flex justify-between">
         <div>
-          <h2 className="font-semibold">iPhone</h2>
+          <h2 className="font-semibold">Apple</h2>
           <p className="mt-3 text-sm text-gray-500">
-            Jelajahi semua produk iPhone.
+            Jelajahi semua produk Apple.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 border-t border-gray-300 pt-5 text-sm text-gray-500">
-        © 2026 iPhone Project
+        © 2026 Apple Project
       </div>
     </footer>
   );
