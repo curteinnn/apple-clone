@@ -1,6 +1,6 @@
 import { FaApple, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
     { name: "Support", path: "/support" },
   ];
 
-  useEffect(() => {
+  useGSAP(() => {
     gsap.fromTo(
       ".navbar",
       {
@@ -32,7 +32,7 @@ export default function Navbar() {
         ease: "power3.out",
       },
     );
-  }, []);
+  });
 
   return (
     <nav className="navbar fixed top-0 left-0 z-50 h-11 w-full bg-gray-50">
