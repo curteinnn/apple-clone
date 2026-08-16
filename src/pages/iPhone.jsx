@@ -43,12 +43,11 @@ export default function iPhone() {
       },
       {
         y: 0,
-        duration: 1.5,
-        delay: 2,
+        duration: 2,
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".iphone-section",
-          start: "top 70%",
+          start: "top 110%",
           once: true,
         },
       },
@@ -98,7 +97,7 @@ export default function iPhone() {
       </section>
       <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
       {/* SECTION 3D */}
-      <section className="relative h-200 bg-gray-100">
+      <section className="iphone-section relative h-200 bg-gray-100">
         <h1 className="absolute inset-0 mx-auto w-fit flex items-center justify-center z-0 text-9xl tracking-[0.08em]">
           iPhone 17 Pro Max
         </h1>
@@ -113,11 +112,11 @@ export default function iPhone() {
       {/* SECTION CARD */}
       <section className="iphone-card-section flex h-300 flex-col justify-center gap-10 pt-10">
         <div className="flex justify-center gap-10">
-          <div className="iphone-card  h-140 w-100 bg-gray-100 rounded-lg">
+          <div className="iphone-card h-140 w-100 bg-gray-100 rounded-lg">
             <img src={ipcard1} alt="" className="h-100 w-full rounded-lg" />
             <h1 className="px-5 pt-3 text-xl font-semibold ">iPhone 17 Pro</h1>
             <p className="px-5 pt-1 text-gray-500 ">manteppp. anjay</p>
-            <button className="ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
+            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
               Buy Now
             </button>
           </div>
@@ -125,7 +124,7 @@ export default function iPhone() {
             <img src={ipcard2} alt="" className="h-100 w-full rounded-lg" />
             <h1 className="px-5 pt-3 text-xl font-semibold ">iPhone Air</h1>
             <p className="px-5 pt-1 text-gray-500 ">manteppp. anjay</p>
-            <button className="ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
+            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
               Buy Now
             </button>
           </div>
@@ -135,7 +134,7 @@ export default function iPhone() {
             <p className="px-5 pt-1 text-sm text-gray-500">
               Pro. Powerful. Titanium.
             </p>
-            <button className="ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
+            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
               Buy Now
             </button>
           </div>

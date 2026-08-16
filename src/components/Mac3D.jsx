@@ -9,7 +9,6 @@ function Mac() {
   const modelRef = useRef();
 
   useGSAP(() => {
-    // Posisi awal
     gsap.set(modelRef.current.rotation, {
       x: 0,
       y: 0,
@@ -32,7 +31,7 @@ function Mac() {
       ref={modelRef}
       object={scene}
       scale={0.07}
-      position={[2, -0.8, 0]}
+      position={[2, -0.6, 0]}
     />
   );
 }

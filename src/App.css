@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html, body {
+  overflow-x: clip;
+}
+
 h1{
     font-family: "Montserrat", sans-serif;
 
@@ -9,3 +13,12 @@ h2{
     font-size:50px;
     font-family: "Montserrat", sans-serif;
 }
+
+.btn{
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
