@@ -21,6 +21,19 @@ export default function App() {
 
       ease: "power3.out",
     });
+
+    gsap.from(".card-mac", {
+      y: 200,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".card-mac-section",
+        start: "top 50%",
+        once: true,
+      },
+    });
   });
   return (
     <main>
@@ -35,10 +48,10 @@ export default function App() {
       </section>
       <div className="h-16 bg-linear-to-b from-white to-gray-100"></div>
 
-      <section className="h-200 gap-5 justify-center items-center bg-gray-100 flex">
-        <div className="h-100 w-80 flex bg-white rounded-lg"></div>
-        <div className="flex h-100 w-80 bg-white rounded-lg"></div>
-        <div className="flex h-100 w-80 bg-white rounded-lg"></div>
+      <section className="card-mac-section h-200 gap-5 justify-center items-center bg-gray-100 flex">
+        <div className="card-mac h-100 w-80 flex bg-white rounded-lg"></div>
+        <div className="card-mac flex h-100 w-80 bg-white rounded-lg"></div>
+        <div className="card-mac flex h-100 w-80 bg-white rounded-lg"></div>
       </section>
     </main>
   );
