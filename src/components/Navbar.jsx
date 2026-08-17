@@ -45,7 +45,7 @@ export default function Navbar() {
           <Link
             to={item.path}
             key={item.name}
-            className="text-sm hover:scale-105"
+            className="text-sm hover:bg-white p-1 rounded-lg"
           >
             {item.name}
           </Link>
