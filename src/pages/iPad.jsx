@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Ipad3D from "../components/Ipad3D";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function iPhone() {
   useEffect(() => {
@@ -14,6 +17,25 @@ export default function iPhone() {
         x: 0,
         duration: 2,
         ease: "power3.inOut",
+      },
+    );
+    gsap.fromTo(
+      ".ipad-card",
+      {
+        y: 200,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".ipad-section",
+          start: "top 80%",
+          once: true,
+        },
       },
     );
   }, []);
@@ -30,14 +52,22 @@ export default function iPhone() {
         </h1>
       </section>
       <div className="h-16 bg-linear-to-b from-white to-gray-100"></div>
-      <section className="flex h-200 gap-7 bg-gray-100 p-10">
-        <div className="h-100 w-1/2 rounded-lg bg-white"></div>
+      <section className="ipad-section flex h-200 gap-7 bg-gray-100 p-10">
+        <div className="ipad-card h-100 w-1/2 rounded-lg bg-white"></div>
 
-        <div className="grid h-fit w-1/2 grid-cols-2 gap-5">
-          <div className="h-47 rounded-lg bg-white"></div>
-          <div className="h-47 rounded-lg bg-white"></div>
-          <div className="h-47 rounded-lg bg-white"></div>
-          <div className="h-47 rounded-lg bg-white"></div>
+        <div className=" grid h-fit w-1/2 grid-cols-2 gap-5">
+          <div className="ipad-card h-47 rounded-lg bg-white">
+            <h1 className="text-center">kasdakudgaudga</h1>
+          </div>
+          <div className="ipad-card h-47 rounded-lg bg-white">
+            <h1 className="text-center">fafdafa</h1>
+          </div>
+          <div className="ipad-card h-47 rounded-lg bg-white">
+            <h1 className="text-center">daaddD</h1>
+          </div>
+          <div className="ipad-card relative h-47 rounded-lg bg-white">
+            <h1 className="text-center">aduhaoua</h1>
+          </div>
         </div>
       </section>
     </main>
