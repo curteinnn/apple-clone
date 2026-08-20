@@ -4,6 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Mac3D from "../components/Mac3D";
 
+import mac1 from "../assets/mac1.jpg";
+import mac2 from "../assets/mac2.jpg";
+import mac3 from "../assets/mac3.jpg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
@@ -49,14 +53,20 @@ export default function App() {
       <div className="h-16 bg-linear-to-b from-white to-gray-100"></div>
 
       <section className="card-mac-section h-200 gap-5 justify-center items-center bg-gray-100 flex">
-        <div className="card-mac h-150 w-100 flex bg-white rounded-lg">
-          <div className="h-100 w-full rounded-lg bg-black"></div>
+        <div className="card-mac h-150 w-100 flex flex-col bg-white rounded-lg">
+          <img src={mac1} alt="" className="h-100 w-full rounded-lg" />
+          <h1 className="p-5 text-2xl font-semibold">MacBook Neo</h1>
         </div>
-        <div className="card-mac flex h-150 w-100 bg-white rounded-lg">
-          <div className="h-100 w-full rounded-lg bg-black"></div>
+        <div className="card-mac flex flex-col h-150 w-100 bg-white rounded-lg">
+          <img src={mac2} alt="" className="h-100 w-full rounded-lg" />
+          <h1 className="p-5 text-2xl font-semibold">
+            {" "}
+            MacBook Air 13" and 15"
+          </h1>
         </div>
-        <div className="card-mac flex h-150 w-100 bg-white rounded-lg">
-          <div className="h-100 w-full rounded-lg bg-black"></div>
+        <div className="card-mac flex flex-col h-150 w-100 bg-white rounded-lg">
+          <img src={mac3} alt="" className="h-100 w-full rounded-lg" />
+          <h1 className="p-5 text-2xl font-semibold">MacBook Pro 14 dan 16"</h1>
         </div>
       </section>
     </main>
