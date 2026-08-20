@@ -49,9 +49,15 @@ export default function App() {
       <div className="h-16 bg-linear-to-b from-white to-gray-100"></div>
 
       <section className="card-mac-section h-200 gap-5 justify-center items-center bg-gray-100 flex">
-        <div className="card-mac h-100 w-80 flex bg-white rounded-lg"></div>
-        <div className="card-mac flex h-100 w-80 bg-white rounded-lg"></div>
-        <div className="card-mac flex h-100 w-80 bg-white rounded-lg"></div>
+        <div className="card-mac h-150 w-100 flex bg-white rounded-lg">
+          <div className="h-100 w-full rounded-lg bg-black"></div>
+        </div>
+        <div className="card-mac flex h-150 w-100 bg-white rounded-lg">
+          <div className="h-100 w-full rounded-lg bg-black"></div>
+        </div>
+        <div className="card-mac flex h-150 w-100 bg-white rounded-lg">
+          <div className="h-100 w-full rounded-lg bg-black"></div>
+        </div>
       </section>
     </main>
   );
