@@ -32,22 +32,15 @@ export default function iPhone() {
 
   return (
     <main className="animate-home">
-      <section className="h-100 bg-white">
-        <h1 className="iphone-title text-center pl-25 pt-10 font-[Luxurious_Script] text-9xl font-light">
-          APPLE
+      <section className="h-200 flex justify-center items-center bg-white">
+        <h1 className="iphone-title pl-25 pt-10 font-[Luxurious_Script] text-9xl font-light">
+          welcome to Apple site
         </h1>
       </section>
 
       <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
 
       <section className="h-200 bg-gray-100">
-        <h1 className="mx-auto w-fit text-center font-[Luxurious_Script] text-9xl font-light tracking-[0.08em]">
-          ANJAYYYYYY
-        </h1>
-      </section>
-      <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
-
-      <section className="h-200 bg-white">
         <video
           className=" w-fullh-full object-cover"
           src={iklan}
