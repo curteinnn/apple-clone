@@ -10,6 +10,7 @@ import IPad from "./pages/iPad";
 import Watch from "./pages/Watch";
 import AirPods from "./pages/AirPods";
 import Tv from "./pages/Tv-home";
+import Entertainment from "./pages/Entertainment";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/watch" element={<Watch />} />
           <Route path="/airpods" element={<AirPods />} />
           <Route path="/tv-home" element={<Tv />} />
+          <Route path="/entertainment" element={<Entertainment />} />
         </Routes>
 
         <Footer />
