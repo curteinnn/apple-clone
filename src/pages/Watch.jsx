@@ -4,10 +4,9 @@ import gsap from "gsap";
 export default function () {
   return (
     <main>
-      <section
-        className="h-screen
-       bg-white"
-      ></section>
+      <section className="flex justify-center items-center h-screen bg-white">
+        <div className="h-100 w-100 bg-black"></div>
+      </section>
     </main>
   );
 }
