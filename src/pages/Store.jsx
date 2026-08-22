@@ -1,3 +1,7 @@
 export default function App() {
-  return <main></main>;
+  return (
+    <main>
+      <section className="h-200"></section>
+    </main>
+  );
 }
