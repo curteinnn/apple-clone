@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -21,7 +21,7 @@ import ipcard3 from "../assets/ipcard3.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function iPhone() {
-  useEffect(() => {
+  useGSAP(() => {
     gsap.fromTo(
       ".animate-home",
       {
