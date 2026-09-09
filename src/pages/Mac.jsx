@@ -8,36 +8,13 @@ import mac1 from "../assets/mac1.jpg";
 import mac2 from "../assets/mac2.jpg";
 import mac3 from "../assets/mac3.jpg";
 
+import { macAnimation } from "../animations/productAnimation";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   useGSAP(() => {
-    gsap.from(".mac-card", {
-      duration: 2,
-      ease: "power.outIn",
-    });
-
-    gsap.from(".title", {
-      opacity: 0,
-      duration: 1,
-      delay: 1,
-      x: 200,
-
-      ease: "power3.out",
-    });
-
-    gsap.from(".card-mac", {
-      y: 200,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power3.out",
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: ".card-mac-section",
-        start: "top 50%",
-        once: true,
-      },
-    });
+    macAnimation();
   });
   return (
     <main>

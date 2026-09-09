@@ -1,4 +1,4 @@
- import gsap from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,4 +58,30 @@ gsap.registerPlugin(ScrollTrigger);
 }
 
 // -==========================================================
+export function macAnimation(){
+ gsap.from(".mac-card", {
+      duration: 2,
+      ease: "power.outIn",
+    });
 
+    gsap.from(".title", {
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      x: 200,
+
+      ease: "power3.out",
+    });
+
+    gsap.from(".card-mac",{
+      y: 200,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".card-mac-section",
+        start: "top 50%",
+        once: true,
+      }});
+      }
