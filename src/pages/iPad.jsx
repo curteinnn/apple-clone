@@ -43,11 +43,11 @@ export default function iPhone() {
   return (
     <main className="">
       <section className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-white">
-        <div className="animate-home sm:h-140 md:h-160 absolute z-10 h-100 w-full">
+        <div className="animate-home sm:h-140 md:h-160 lg:h-170 absolute z-10 h-100 w-full">
           <Ipad3D />
         </div>
 
-        <h1 className="font-light sm:text-5xl md:7xl text-3xl absolute inset-0 z-0 flex items-center justify-center whitespace-nowrap text-center tracking-[0.2em]">
+        <h1 className="font-light sm:text-5xl md:text-6xl lg:text-7xl text-3xl absolute inset-0 z-0 flex items-center justify-center whitespace-nowrap text-center px-5 tracking-[0.2em]">
           Apple iPad Pro <br /> with apple pencil
         </h1>
       </section>

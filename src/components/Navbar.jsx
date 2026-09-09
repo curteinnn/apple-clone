@@ -35,24 +35,26 @@ export default function Navbar() {
   });
 
   return (
-    <nav className="navbar fixed top-0 left-0 z-50 h-11 w-full bg-gray-50">
-      <div className="flex h-full items-center justify-center gap-13 px-8">
+    <nav className="navbar fixed top-0 left-0 z-50 h-11 w-full bg-gray-50 px-4 lg:px-8">
+      <div className="flex h-full items-center justify-between lg:justify-center lg:gap-13">
         <Link to="/">
-          <FaApple />
+          <FaApple className="text-lg" />
         </Link>
 
-        {menu.map((item) => (
-          <Link
-            to={item.path}
-            key={item.name}
-            className="text-sm hover:bg-white p-1 rounded-lg"
-          >
-            {item.name}
-          </Link>
-        ))}
+        <div className="hidden lg:flex items-center gap-10 px-8">
+          {menu.map((item) => (
+            <Link
+              to={item.path}
+              key={item.name}
+              className="text-sm hover:bg-white p-1 rounded-lg"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
 
         <button className="cursor-pointer">
-          <FaSearch />
+          <FaSearch className="text-sm" />
         </button>
       </div>
     </nav>
