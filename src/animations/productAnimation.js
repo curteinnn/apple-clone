@@ -2,7 +2,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
- 
+
+
+//==============IPHONE ANIMATION=============== 
  export function productAnimation (){
     gsap.fromTo(
       ".animate-home",
@@ -57,7 +59,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 }
 
-// -==========================================================
+// -=============================MAC ANIMATION=============================
 export function macAnimation(){
  gsap.from(".mac-card", {
       duration: 2,
@@ -85,3 +87,5 @@ export function macAnimation(){
         once: true,
       }});
       }
+
+      //===================== 
