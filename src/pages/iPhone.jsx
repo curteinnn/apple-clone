@@ -45,62 +45,80 @@ export default function iPhone() {
         </div>
       </section>
       <div className="h-20 bg-gradient-to-b from-white to-gray-100" />
-      {/* SECTION 3D */}
-      <section className="iphone-section relative h-200 bg-gray-100">
-        <h1 className="absolute inset-0 mx-auto w-fit flex items-center justify-center z-0 text-9xl tracking-[0.08em]">
+
+      <section className="iphone-section relative h-200 w-full bg-gray-100 flex items-center justify-center">
+        <h1 className="absolute inset-0 flex items-center justify-center z-0 text-3xl sm:text-4xl md:text-6xl lg:text-8xl tracking-[0.08em] font-medium text-center">
           iPhone 17 Pro Max
         </h1>
 
-        <div className="relative flex h-full items-center justify-center">
-          <div className="iphone-3d absolute inset-0 z-10">
-            <Iphone3D />
-          </div>
+        <div className="iphone-3d relative z-10 w-[350px] sm:w-[450px] lg:w-[600px] h-[400px] sm:h-[550px] lg:h-[700px] flex items-center justify-center">
+          <Iphone3D />
         </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
 
       <section className="iphone-card-section flex h-300 flex-col justify-center gap-10 pt-10">
         <section className="iphone-card-section py-10">
-          <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-6 md:justify-center md:gap-10 px-10 [&::-webkit-scrollbar]:hidden">
-            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
-              <img
-                src={ipcard1}
-                alt=""
-                className="h-70 w-full object-cover rounded-t-3xl"
-              />
-              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17 Pro</h1>
-              <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
-              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
-                Buy Now
-              </button>
+          <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-6 px-10 [&::-webkit-scrollbar]:hidden lg:gap-25 lg:justify-center ">
+            {/* Card 1 */}
+            <div className="iphone-card h-110 w-60 sm:w-70 md:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6 flex flex-col justify-between overflow-hidden">
+              <div>
+                <img
+                  src={ipcard1}
+                  alt=""
+                  className="h-60 w-full object-cover rounded-t-3xl"
+                />
+                <h1 className="px-5 pt-3 text-xl font-semibold">
+                  iPhone 17 Pro
+                </h1>
+                <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
+              </div>
+
+              <div className="px-5">
+                <button className="btn rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                  Buy Now
+                </button>
+              </div>
             </div>
 
-            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
-              <img
-                src={ipcard2}
-                alt=""
-                className="h-70 w-full object-cover rounded-t-3xl"
-              />
-              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone Air</h1>
-              <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
-              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
-                Buy Now
-              </button>
+            {/* Card 2 */}
+            <div className="iphone-card h-110 w-60 sm:w-70 md:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6 flex flex-col justify-between overflow-hidden">
+              <div>
+                <img
+                  src={ipcard2}
+                  alt=""
+                  className="h-60 w-full object-cover rounded-t-3xl"
+                />
+                <h1 className="px-5 pt-3 text-xl font-semibold">iPhone Air</h1>
+                <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
+              </div>
+
+              <div className="px-5">
+                <button className="btn rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                  Buy Now
+                </button>
+              </div>
             </div>
 
-            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
-              <img
-                src={ipcard3}
-                alt=""
-                className="h-70 w-full object-cover rounded-t-3xl"
-              />
-              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17</h1>
-              <p className="px-5 pt-1 text-sm text-gray-500">
-                Pro. Powerful. Titanium.
-              </p>
-              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
-                Buy Now
-              </button>
+            {/* Card 3 */}
+            <div className="iphone-card h-110 w-60 sm:w-70 md:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6 flex flex-col justify-between overflow-hidden">
+              <div>
+                <img
+                  src={ipcard3}
+                  alt=""
+                  className="h-60 w-full object-cover rounded-t-3xl"
+                />
+                <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17</h1>
+                <p className="px-5 pt-1 text-sm text-gray-500">
+                  Pro. Powerful. Titanium.
+                </p>
+              </div>
+
+              <div className="px-5">
+                <button className="btn rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
         </section>
