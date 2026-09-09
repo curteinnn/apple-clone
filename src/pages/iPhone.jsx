@@ -24,9 +24,11 @@ export default function iPhone() {
   return (
     <main className="animate-home">
       <section className="h-100 bg-white">
-        <h1 className="iphone-title pl-25 pt-10 text-8xl ">iPhone</h1>
+        <h1 className="iphone-title pl-10 pt-10 text-6xl sm:text-7xl md:text-8xl ">
+          iPhone
+        </h1>
 
-        <div className="flex gap-20 pl-20 pt-10">
+        <div className="flex flex-row overflow-x-auto snap-x snap-mandatory md:gap-10 px-10 [&::-webkit-scrollbar]:hidden gap-20 pl-20 pt-10">
           <ProductCard image={ip17pro} name="iPhone 17 Pro" />
 
           <ProductCard image={ipair} name="iPhone Air" />
