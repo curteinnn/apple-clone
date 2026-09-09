@@ -2,8 +2,11 @@ import { FaApple, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const menu = [
     { name: "Store", path: "/store" },
     { name: "Mac", path: "/mac" },
@@ -53,9 +56,27 @@ export default function Navbar() {
           ))}
         </div>
 
-        <button className="cursor-pointer">
-          <FaSearch className="text-sm" />
-        </button>
+        {/* SEARCH */}
+        <div className="relative">
+          <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+            <FaSearch className="text-sm" />
+          </button>
+
+          {isOpen && (
+            <div className="absolute right-0 top-8 w-48 rounded-xl bg-white p-2 shadow-lg">
+              {menu.map((item) => (
+                <Link
+                  to={item.path}
+                  key={item.name}
+                  onClick={() => setIsOpen(false)}
+                  className="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );

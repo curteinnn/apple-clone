@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/apple-clone/', plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()],
 })
