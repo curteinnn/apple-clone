@@ -1,7 +1,3 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import ProductCard from "../components/ProductCard";
 import Iphone3D from "../components/Iphone3D";
 
@@ -18,62 +14,13 @@ import ipcard1 from "../assets/ipcard1.jpg";
 import ipcard2 from "../assets/ipcard2.jpg";
 import ipcard3 from "../assets/ipcard3.jpg";
 
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+import { productAnimation } from "../animations/productAnimation";
 
 export default function iPhone() {
   useGSAP(() => {
-    gsap.fromTo(
-      ".animate-home",
-      {
-        y: 200,
-        opacity: -2,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 2,
-        ease: "power3.out",
-      },
-    );
-
-    gsap.fromTo(
-      ".iphone-3d",
-      {
-        y: -2000,
-      },
-      {
-        y: 0,
-        duration: 2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".iphone-section",
-          start: "top 110%",
-          once: true,
-        },
-      },
-    );
-
-    gsap.fromTo(
-      ".iphone-card",
-      {
-        y: 200,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: ".iphone-card-section",
-          start: "top 80%",
-          once: true,
-        },
-      },
-    );
-  }, []);
-
+    productAnimation();
+  });
   return (
     <main className="animate-home">
       <section className="h-100 bg-white">
