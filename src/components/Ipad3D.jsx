@@ -6,7 +6,7 @@ function Iphone() {
   const { scene } = useGLTF("/models/apple_ipad_pro.glb");
   const modelRef = useRef();
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     modelRef.current.rotation.y += delta * 0.15;
   });
 
