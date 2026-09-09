@@ -56,46 +56,65 @@ export default function iPhone() {
         </div>
       </section>
       <div className="h-16 bg-gradient-to-b from-gray-100 to-white" />
-      {/* SECTION CARD */}
+
       <section className="iphone-card-section flex h-300 flex-col justify-center gap-10 pt-10">
-        <div className="flex justify-center gap-10">
-          <div className="iphone-card h-140 w-100 bg-gray-100 rounded-lg">
-            <img src={ipcard1} alt="" className="h-100 w-full rounded-lg" />
-            <h1 className="px-5 pt-3 text-xl font-semibold ">iPhone 17 Pro</h1>
-            <p className="px-5 pt-1 text-gray-500 ">manteppp. anjay</p>
-            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
-              Buy Now
-            </button>
+        <section className="iphone-card-section py-10">
+          <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-6 md:justify-center md:gap-10 px-10 [&::-webkit-scrollbar]:hidden">
+            {/* Card 1 */}
+            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
+              <img
+                src={ipcard1}
+                alt=""
+                className="h-70 w-full object-cover rounded-t-3xl"
+              />
+              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17 Pro</h1>
+              <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
+              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                Buy Now
+              </button>
+            </div>
+
+            {/* Card 2 */}
+            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
+              <img
+                src={ipcard2}
+                alt=""
+                className="h-70 w-full object-cover rounded-t-3xl"
+              />
+              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone Air</h1>
+              <p className="px-5 pt-1 text-gray-500">manteppp. anjay</p>
+              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                Buy Now
+              </button>
+            </div>
+
+            {/* Card 3 */}
+            <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
+              <img
+                src={ipcard3}
+                alt=""
+                className="h-70 w-full object-cover rounded-t-3xl"
+              />
+              <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17</h1>
+              <p className="px-5 pt-1 text-sm text-gray-500">
+                Pro. Powerful. Titanium.
+              </p>
+              <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white cursor-pointer">
+                Buy Now
+              </button>
+            </div>
           </div>
-          <div className="iphone-card h-140 w-100 bg-gray-100 rounded-lg">
-            <img src={ipcard2} alt="" className="h-100 w-full rounded-lg" />
-            <h1 className="px-5 pt-3 text-xl font-semibold ">iPhone Air</h1>
-            <p className="px-5 pt-1 text-gray-500 ">manteppp. anjay</p>
-            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
-              Buy Now
-            </button>
-          </div>
-          <div className="iphone-card h-140 w-100 bg-gray-100 rounded-lg">
-            <img src={ipcard3} alt="" className="h-100 w-full rounded-lg " />
-            <h1 className="px-5 pt-3 text-xl font-semibold">iPhone 17</h1>
-            <p className="px-5 pt-1 text-sm text-gray-500">
-              Pro. Powerful. Titanium.
-            </p>
-            <button className="btn ml-5 mt-3 rounded-full bg-black px-5 py-2 text-sm text-white">
-              Buy Now
-            </button>
-          </div>
-        </div>
+        </section>
         <div className="rounded-lg mt-10">
-          <h2 className=" text-center py-10 px-10 tracking-[1em]">
+          <h2 className=" text-3xl sm:text-5xl md:text-7xl text-center py-10 px-10 tracking-[1em]">
             Think Different
           </h2>
         </div>
       </section>
-      {/* SECTION IKLAN */}
-      <section className="h-200 bg-white">
+
+      <section className="h-96 sm:h-125 lg:h-screen w-full flex bg-white overflow-hidden">
         <video
-          className=" w-full h-full object-cover"
+          className="w-full h-full object-cover"
           src={iklan}
           autoPlay
           muted
