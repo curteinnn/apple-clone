@@ -60,7 +60,6 @@ export default function iPhone() {
       <section className="iphone-card-section flex h-300 flex-col justify-center gap-10 pt-10">
         <section className="iphone-card-section py-10">
           <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-6 md:justify-center md:gap-10 px-10 [&::-webkit-scrollbar]:hidden">
-            {/* Card 1 */}
             <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
               <img
                 src={ipcard1}
@@ -74,7 +73,6 @@ export default function iPhone() {
               </button>
             </div>
 
-            {/* Card 2 */}
             <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
               <img
                 src={ipcard2}
@@ -88,7 +86,6 @@ export default function iPhone() {
               </button>
             </div>
 
-            {/* Card 3 */}
             <div className="iphone-card h-110 w-[80vw] sm:w-85 shrink-0 snap-center bg-gray-100 rounded-3xl pb-6">
               <img
                 src={ipcard3}
@@ -105,6 +102,7 @@ export default function iPhone() {
             </div>
           </div>
         </section>
+
         <div className="rounded-lg mt-10">
           <h2 className=" text-3xl sm:text-5xl md:text-7xl text-center py-10 px-10 tracking-[1em]">
             Think Different
