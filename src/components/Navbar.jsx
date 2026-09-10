@@ -4,6 +4,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useState } from "react";
 
+import { componentsAnimation } from "../animations/componentsAnimation";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,20 +23,7 @@ export default function Navbar() {
   ];
 
   useGSAP(() => {
-    gsap.fromTo(
-      ".navbar",
-      {
-        y: -100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 2,
-        delay: 0.5,
-        ease: "power3.out",
-      },
-    );
+    componentsAnimation();
   });
 
   return (
