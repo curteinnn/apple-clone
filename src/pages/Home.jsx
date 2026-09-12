@@ -1,16 +1,5 @@
 import { useEffect } from "react";
 import gsap from "gsap";
-
-import ProductCard from "../components/ProductCard";
-import Iphone3D from "../components/Iphone3D";
-
-import ip17pro from "../assets/ip17pro.png";
-import ipair from "../assets/ipair.png";
-import ip17 from "../assets/ip17.png";
-import ip17e from "../assets/ip17e.png";
-import ip16 from "../assets/ip16.png";
-import bandingkan from "../assets/bandingkan.png";
-import ios from "../assets/ios.png";
 import iklan from "../assets/iklan.mp4";
 
 export default function iPhone() {
